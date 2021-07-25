@@ -18,5 +18,5 @@ done
 
 mkdir -p dist
 mv deb.deb "dist/sampan-$1.deb"
-cp ./target/x86_64-unknown-linux-musl/release/sampan "dist/sampan-linux-$1"
-cp ./target/x86_64-pc-windows-gnu/release/sampan.exe "dist/sampan-windows-$1.exe"
+cp ./target/x86_64-unknown-linux-musl/release/sampan "dist/sampan"
+cp ./target/x86_64-pc-windows-gnu/release/sampan.exe "dist/sampan.exe"
