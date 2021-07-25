@@ -1,0 +1,8 @@
+Package: sampan
+Version: 1.0.0
+Architecture: all
+Maintainer: Franceesco Pasa, <francescopasa@gmail.com>
+Installed-Size: 2
+Section: extras
+Priority: optional
+Description: Fix panorama pictures from Samsung phones
