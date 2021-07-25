@@ -7,3 +7,9 @@ edition = "2018"
 [dependencies]
 clap = "^2.33"
 byteorder = "^1.4"
+
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
