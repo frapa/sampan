@@ -2,13 +2,16 @@
 
 Fix panorama pictures from Samsung phones. These pictures are not standard JPEG
 and cannot be opened by most programs. They're also unnecessary large due to
-the embedded video file.
+the embedded video file. This program makes them valid JPEG and also strips
+the video.
 
 The program is also capable or removing the motion video from pictures taken
 with Samsung phones and of removing similar videos from wide selfies.
 
 Typically, it reduces the file size in about half, without any loss of picture
 quality.
+
+`Sampan` can also run in batch mode and fix all your images at once.
 
 # How to install
 
