@@ -9,9 +9,10 @@ The program is also capable or removing the motion video from pictures taken
 with Samsung phones and of removing similar videos from wide selfies.
 
 Typically, it reduces the file size in about half, without any loss of picture
-quality.
+quality. In my tests, the program also preserved all EXIF metadata.
 
-`Sampan` can also run in batch mode and fix all your images at once.
+`Sampan` can also run in batch mode and fix the images in one or more folders
+at once.
 
 # How to install
 
