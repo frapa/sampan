@@ -38,4 +38,8 @@ sampan path/to/image.jpg -o output.jpg
 sampan path/to/*.jpg -d
 # Replace files with stripped version (ensure you have a backup!)
 sampan path/to/*.jpg -i
+
+# If on Windows using PowerShell, wildcard will not work.
+# A workaround is to use the following command:
+sampan (get-item path/to/*.jpg) -i
 ```
