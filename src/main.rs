@@ -105,7 +105,7 @@ fn parse_args() -> ArgMatches<'static> {
                 .takes_value(false)
                 .help(
                     "Force conversion even if the Samsung version number \
-                    is unsupported and even if the entity types do match. \
+                    is unsupported and even if the entity types do not match. \
                     This option can be helpful for forcing conversion of \
                     some files, and will never touch files that are not in \
                     Samsung format.",
@@ -203,10 +203,11 @@ fn read_entries_count(file: &mut File, force: bool) -> Result<i64, String> {
     }
 
     let version = LittleEndian::read_u32(&entries_header[4..8]) as i64;
-    if !force && version != 101 && version != 103 && version != 105 && version != 106 {
+    if !force && version != 101 && version != 103 && version != 105 && version != 106 && version != 107 {
         return Err(format!(
             "Unknown panorama version {}, \
-            sampan only supports version 101, 103, 105, 106 [skip]",
+            sampan only supports versions 101, 103, 105, 106, 107 \
+            (run with --force to force stripping) [skip]",
             version
         ));
     }
